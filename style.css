@@ -13,9 +13,79 @@ Tags:
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
-
 */
+/**
+ *  Description: This is the primary style sheet
+ * and it is the mobile styles by default
+ *
+ * Sources:
+ *  - Media queries from
+ *    https://css-tricks.com/snippets/css/media-queries-for-standard-devices/
+ *  - CSS Reset
+ *    http://meyerweb.com/eric/tools/css/reset/
+ *  - Mobile CSS Reset
+ *    https://subvisual.co/blog/posts/53-a-better-reset-for-the-mobile-web/
+ *  - Big section letters are generated on this website using the "univers" style
+ *    http://www.messletters.com/en/big-text/
+ *
+ * Standard Format Rules
+ * 	#element-name {
+ * 		display: ;  		---Display type always first
+ * 	 	position: ; 		---Positioning next including top,left,right
+ * 	 	top: ;
+ * 	 	left: ;
+ * 	 	floats: ;			---floats will likely end up here
+ * 	 	width: ;			---sizing of the actual element here
+ * 	 	height: ;
+ * 	 	margin: ;			---Margin always before padding
+ * 	 	padding: ;
+ * 	 	overflow: ; 		---Overflow status
+ * 	 	--fonts--
+ * 	 	font-family: ;		---All font styles starting with font family then sizes then weights, decorations
+ * 	 	font-size: ;
+ * 	 	text-decoration: ;
+ * 	 	list-styletypes: ;
+ * 	 	--colors--
+ * 	 	color: ; 			---All colors fall in place after positions and size
+ * 	 	background-color: ;
+ * 	}
+ */
 
-:root {
-	
-}
+ :root {
+ 	--port-head-co:  #A5C2AC; 	/* --- Color for the portfolio header/logo */
+ 	--color-si-bg: 	 #403D39; 	/* --- Color for the sidebar background */
+ 	--color-co-bg:   #DFEDE3; 	/* --- Color for the content background */
+ 	--color-font-si: #DFEDE3; 	/* --- Color for the sidebar font */
+ 	--co-font-sihov: #DFEDE3; 	/* --- Color for the sidebar font on hover */
+ 	--color-font-co: #181715; 	/* --- Color for the content font */
+ 	--co-font-cohov: #181715; 	/* --- Color for the content font on hover */
+ 	--co-gall-bord:	 #000000; 	/* --- Color for the gallery borders */
+ 	--co-copyright:  #B7C2BA;   /* --- Color for the copyright in the sidebar */
+ 	--co-cube-bg:    #403D39;   /* --- Color for the cube faces */
+
+ 	--co-gray: 		 #74716F;
+ 	--co-gray2:		 #6A6765;	/* --- Color for the grays */
+ 	--co-gray3:		 #8D8A89;
+
+ 	--co-yhigh:		 #FFB997;
+ 	--co-yhigh2:	 #FFC5A9;
+ 	--co-yhigh3: 	 #E6D1A5;	/* --- Color for the highlights */
+ 	--co-yhigh4:	 #E8D5AD;
+ 	--co-yhigh5:	 #F2C47E;
+
+ 	--co-highlight2: #67D1FA;
+ 	--co-highlight3: #8DDCFB;	/* --- Color for the other options */
+ 	--co-highlight4: #B3E8FC;
+
+ 	--color-green: 	 #5E926A; 	/* --- Color for the green */
+ 	--color-green2:  #A5C2AC;
+ 	--color-green3:  #ADC7B3;
+ 	--color-green4:  #B5CDBB;
+ 	--color-green5:  #B7CEBD;
+
+ 	--font-header: 	 'Dosis', sans-serif;
+ 	--font-header2:	 'Fira Sans', sans-serif;
+ 	--font-para: 	 'Arapey', serif;
+ 	--font-para2:	 'Lora', serif;
+ 	--port-head-fo:	 'Dosis', sans-serif;
+ }

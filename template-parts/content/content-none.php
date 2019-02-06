@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-<html <?php language_attributes(); ?>>
 <?php
 /**
  * Geoff Portfolio functions and definitions
@@ -12,13 +10,9 @@
  * @subpackage Geoff_Portfolio_Theme
  * @since Geoff Portfolio 1.0
  */
-
-get_head();
 ?>
-<body>
-	<?php get_header();?>
-	<h1>Error 404</h1>
-	<p>Whatever you were looking for does not exist!</p>
-	<?php get_footer();?>
-</body>
-</html>
+<section class="content">
+	<h3>No Content</h3>
+</section>
+<?php
+?>

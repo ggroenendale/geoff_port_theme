@@ -1,6 +1,3 @@
-<!DOCTYPE html>
-<html <?php language_attributes();?> >
-
 <?php
 /**
  * The main template file
@@ -17,21 +14,8 @@
  */
 ?>
 
-<?php get_head('head');?>
-    <body <?php body_class();?>>
-    <?php get_header();?>
-    <?php
-	if (have_posts()) {
-		while (have_posts()) {
-			the_post();
-			get_template_part('template-parts/content/content');
-		}
-	}
-	else {
-		get_template_part('template-parts/content/content', 'none');
-	}
-	?>
-    <?php get_sidebar(); ?>
-    <?php get_footer(); ?>
-    </body>
-</html>
+<section class="content">
+	<?php the_content();?>
+</section>
+<?php
+?>
