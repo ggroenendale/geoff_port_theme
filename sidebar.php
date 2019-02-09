@@ -11,8 +11,6 @@
 ?>
 
 <sidebar>This is the sidebar?
-<?php
-
-
-?>
+<?php ?>
+<div id="socials-wrap"></div
 </sidebar>

@@ -53,5 +53,3 @@ if (! function_exists('port_entry_footer')):
 		port_posted_by();
 	}
 endif;
-
-?>

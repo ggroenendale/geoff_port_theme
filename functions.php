@@ -14,14 +14,14 @@
  /**
   * Debugging
   */
- // error_reporting(-1);
- // ini_set('display_errors', 1);
+ error_reporting(-1);
+ ini_set('display_errors', 1);
 
  /**
   * Production
   */
- error_reporting(0);
- ini_set('display_errors', 0);
+ // error_reporting(0);
+ // ini_set('display_errors', 0);
 
  if (! function_exists('port_setup')):
  	function port_setup(){

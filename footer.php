@@ -12,5 +12,5 @@
 ?>
 
 <footer>
-	
+	<p>Footer text</p>
 </footer>

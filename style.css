@@ -50,42 +50,261 @@ Use it to make something cool, have fun, and share what you've learned with othe
  * 	 	background-color: ;
  * 	}
  */
+ /*====================================================================================
+ ======================================================================================
 
- :root {
- 	--port-head-co:  #A5C2AC; 	/* --- Color for the portfolio header/logo */
- 	--color-si-bg: 	 #403D39; 	/* --- Color for the sidebar background */
- 	--color-co-bg:   #DFEDE3; 	/* --- Color for the content background */
- 	--color-font-si: #DFEDE3; 	/* --- Color for the sidebar font */
- 	--co-font-sihov: #DFEDE3; 	/* --- Color for the sidebar font on hover */
- 	--color-font-co: #181715; 	/* --- Color for the content font */
- 	--co-font-cohov: #181715; 	/* --- Color for the content font on hover */
- 	--co-gall-bord:	 #000000; 	/* --- Color for the gallery borders */
- 	--co-copyright:  #B7C2BA;   /* --- Color for the copyright in the sidebar */
- 	--co-cube-bg:    #403D39;   /* --- Color for the cube faces */
+ 			88888888ba
+ 			88      "8b                                       ,d
+ 			88      ,8P                                       88
+ 			88aaaaaa8P'   ,adPPYba,  ,adPPYba,   ,adPPYba,  MM88MMM
+ 			88""""88'    a8P_____88  I8[    ""  a8P_____88    88
+ 			88    `8b    8PP"""""""   `"Y8ba,   8PP"""""""    88
+ 			88     `8b   "8b,   ,aa  aa    ]8I  "8b,   ,aa    88,
+ 			88      `8b   `"Ybbd8"'  `"YbbdP"'   `"Ybbd8"'    "Y888
 
- 	--co-gray: 		 #74716F;
- 	--co-gray2:		 #6A6765;	/* --- Color for the grays */
- 	--co-gray3:		 #8D8A89;
+ ======================================================================================
+ ======================================================================================
+                 Meyers Reset
+ ======================================================================================
+ ====================================================================================*/
+ /* http://meyerweb.com/eric/tools/css/reset/
+    v2.0 | 20110126
+    License: none (public domain)
+ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
- 	--co-yhigh:		 #FFB997;
- 	--co-yhigh2:	 #FFC5A9;
- 	--co-yhigh3: 	 #E6D1A5;	/* --- Color for the highlights */
- 	--co-yhigh4:	 #E8D5AD;
- 	--co-yhigh5:	 #F2C47E;
+ /*====================================================================================
+ ======================================================================================
 
- 	--co-highlight2: #67D1FA;
- 	--co-highlight3: #8DDCFB;	/* --- Color for the other options */
- 	--co-highlight4: #B3E8FC;
+ 				88888888ba
+ 				88      "8b                              ,d
+ 				88      ,8P                              88
+ 				88aaaaaa8P'   ,adPPYba,    ,adPPYba,   MM88MMM
+ 				88""""88'    a8"     "8a  a8"     "8a    88
+ 				88    `8b    8b       d8  8b       d8    88
+ 				88     `8b   "8a,   ,a8"  "8a,   ,a8"    88,
+ 				88      `8b   `"YbbdP"'    `"YbbdP"'     "Y888
 
- 	--color-green: 	 #5E926A; 	/* --- Color for the green */
- 	--color-green2:  #A5C2AC;
- 	--color-green3:  #ADC7B3;
- 	--color-green4:  #B5CDBB;
- 	--color-green5:  #B7CEBD;
+ ======================================================================================
+ ======================================================================================
+     Begin Styles
+ ======================================================================================
+ ====================================================================================*/
 
- 	--font-header: 	 'Dosis', sans-serif;
- 	--font-header2:	 'Fira Sans', sans-serif;
- 	--font-para: 	 'Arapey', serif;
- 	--font-para2:	 'Lora', serif;
- 	--port-head-fo:	 'Dosis', sans-serif;
- }
+:root {
+    --port-head-co:  #A5C2AC; 	/* --- Color for the portfolio header/logo */
+    --color-si-bg: 	 #403D39; 	/* --- Color for the sidebar background */
+    --color-co-bg:   #DFEDE3; 	/* --- Color for the content background */
+    --color-font-si: #DFEDE3; 	/* --- Color for the sidebar font */
+    --co-font-sihov: #DFEDE3; 	/* --- Color for the sidebar font on hover */
+    --color-font-co: #181715; 	/* --- Color for the content font */
+    --co-font-cohov: #181715; 	/* --- Color for the content font on hover */
+    --co-gall-bord:	 #000000; 	/* --- Color for the gallery borders */
+    --co-copyright:  #B7C2BA;   /* --- Color for the copyright in the sidebar */
+    --co-cube-bg:    #403D39;   /* --- Color for the cube faces */
+
+    --co-gray: 		 #74716F;
+    --co-gray2:		 #6A6765;	/* --- Color for the grays */
+    --co-gray3:		 #8D8A89;
+
+    --co-yhigh:		 #FFB997;
+    --co-yhigh2:	 #FFC5A9;
+    --co-yhigh3: 	 #E6D1A5;	/* --- Color for the highlights */
+    --co-yhigh4:	 #E8D5AD;
+    --co-yhigh5:	 #F2C47E;
+
+    --co-highlight2: #67D1FA;
+    --co-highlight3: #8DDCFB;	/* --- Color for the other options */
+    --co-highlight4: #B3E8FC;
+
+    --color-green: 	 #5E926A; 	/* --- Color for the green */
+    --color-green2:  #A5C2AC;
+    --color-green3:  #ADC7B3;
+    --color-green4:  #B5CDBB;
+    --color-green5:  #B7CEBD;
+
+    --font-header: 	 'Dosis', sans-serif;
+    --font-header2:	 'Fira Sans', sans-serif;
+    --font-para: 	 'Arapey', serif;
+    --font-para2:	 'Lora', serif;
+    --port-head-fo:	 'Dosis', sans-serif;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+#wrapper {
+    position: absolute;
+    right: -17px;
+    top: 0;
+    bottom: 0;
+    width: calc(85% + 17px);
+    overflow-y: scroll;
+}
+
+ /*====================================================================================
+ ======================================================================================
+
+ 		88        88                                   88
+ 		88        88                                   88
+ 		88        88                                   88
+ 		88aaaaaaaa88   ,adPPYba,  ,adPPYYba,   ,adPPYb,88   ,adPPYba,  8b,dPPYba,
+ 		88""""""""88  a8P_____88  ""     `Y8  a8"    `Y88  a8P_____88  88P'   "Y8
+ 		88        88  8PP"""""""  ,adPPPPP88  8b       88  8PP"""""""  88
+ 		88        88  "8b,   ,aa  88,    ,88  "8a,   ,d88  "8b,   ,aa  88
+ 		88        88   `"Ybbd8"'  `"8bbdP"Y8   `"8bbdP"Y8   `"Ybbd8"'  88
+
+ ======================================================================================
+ ======================================================================================
+                 Begin Header Styles
+ ======================================================================================
+ ====================================================================================*/
+
+#left {
+    position: absolute;
+    float: left;
+    height: 100%;
+    width: 15%;
+}
+
+header {
+    border: 1px solid orange;
+    height: 50%;
+    width: 100%;
+}
+
+sidebar {
+    position: absolute;
+    display: block;
+    border: 1px solid red;
+    height: 50%;
+    width: 100%;
+}
+
+#socials-wrap {
+    border: 1px solid blue;
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    bottom: 0;
+    left: 0;
+}
+
+ /*====================================================================================
+ ======================================================================================
+
+ 			88        88
+ 			88        88
+ 			88        88
+ 			88aaaaaaaa88   ,adPPYba,   88,dPYba,,adPYba,    ,adPPYba,
+ 			88""""""""88  a8"     "8a  88P'   "88"    "8a  a8P_____88
+ 			88        88  8b       d8  88      88      88  8PP"""""""
+ 			88        88  "8a,   ,a8"  88      88      88  "8b,   ,aa
+ 			88        88   `"YbbdP"'   88      88      88   `"Ybbd8"'
+
+ ======================================================================================
+ ======================================================================================
+                 Begin Home Page Styles
+ ======================================================================================
+ ====================================================================================*/
+
+#content {
+    height: 900px;
+}
+
+ /*====================================================================================
+ ======================================================================================
+
+ 		88888888888
+ 		88                                       ,d
+ 		88                                       88
+ 		88aaaaa       ,adPPYba,    ,adPPYba,   MM88MMM   ,adPPYba,  8b,dPPYba,
+ 		88"""""      a8"     "8a  a8"     "8a    88     a8P_____88  88P'   "Y8
+ 		88           8b       d8  8b       d8    88     8PP"""""""  88
+ 		88           "8a,   ,a8"  "8a,   ,a8"    88,    "8b,   ,aa  88
+ 		88            `"YbbdP"'    `"YbbdP"'     "Y888   `"Ybbd8"'  88
+
+ ======================================================================================
+ ======================================================================================
+                 Begin Footer Styles
+ ======================================================================================
+ ====================================================================================*/
+
+footer {
+    background-color: black;
+    width: 100%;
+    height: 300px;
+}
+
+footer p {
+    color: white;
+}
+
+ /*====================================================================================
+ ======================================================================================
+
+ 88888888ba,                           88
+ 88      `"8b                          88           ,d
+ 88        `8b                         88           88
+ 88         88   ,adPPYba,  ,adPPYba,  88   ,d8   MM88MMM   ,adPPYba,   8b,dPPYba,
+ 88         88  a8P_____88  I8[    ""  88 ,a8"      88     a8"     "8a  88P'    "8a
+ 88         8P  8PP"""""""   `"Y8ba,   8888[        88     8b       d8  88       d8
+ 88      .a8P   "8b,   ,aa  aa    ]8I  88`"Yba,     88,    "8a,   ,a8"  88b,   ,a8"
+ 88888888Y"'     `"Ybbd8"'  `"YbbdP"'  88   `Y8a    "Y888   `"YbbdP"'   88`YbbdP"'
+                                                                        88
+                                                                        88
+ ======================================================================================
+ ======================================================================================
+                 Responsive Styles
+ ======================================================================================
+ ====================================================================================*/
+
+@media only screen and (min-width: 768px){
+
+}
